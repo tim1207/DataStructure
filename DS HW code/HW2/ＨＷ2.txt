@@ -1,0 +1,37 @@
+1.(a)
+以十進位數字根據短除法所留下的餘數當答案
+
+1.(b)
+    ans=""
+    while n>=1:
+        ans+=str(n%2)
+        n=n//2
+        #print(ans)
+    return inverse(ans) 
+
+1.(c)
+    ans = ""
+    if n >= 1:       
+        ans =  Dec_to_Bin_Rec(n / 2)+str(n % 2) 
+        return ans
+    else :
+        return ""
+
+2.(a) f(x)=4x^2+2x+1=Θ(x^2)
+	c=7 n=1 Big O
+	c=6 n=1 Omaga
+	
+2.(b) f(x)=xlogx+􏰀(x)=Θ(xlogx)
+ 	Because 1 < log n < n < nlogn < n^2< n^2 < a^n
+	So f(x)=xlogx+􏰀(x)=Θ(xlogx)
+
+3.(a) 2^n+1 = O(2^n) 
+	when C=2 n=1 is correct
+
+3.(b) 2^2n = O(2^n)
+	when C=3 n=1 is correct
+
+4.(a) (n)*(n-1)/2
+	ex:list [5,4,3,2,1] =>10
+
+4.(b)
